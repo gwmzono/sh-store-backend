@@ -1,0 +1,11 @@
+| 接口        | 请求方式 | 参数                                                         | 描述                                                         |
+| ----------- | :------: | :----------------------------------------------------------- | ------------------------------------------------------------ |
+| /city       |   GET    | alpha:String(1)                                              | 城市首字母                                                   |
+| /school     |   GET    | city:String                                                  | 所在城市名称                                                 |
+| /schoolName |   GET    | name:String(2,20)                                            | 学校名称                                                     |
+| /register   |   POST   | phone:String(11)<br>password:String(8,32)<br>nickname:String(2,16) | 11位手机号<br>首位字母密码<br>昵称(2-16字)                   |
+| /login      |   POST   | phone:String(11)<br/>password:String(8,)                     | 11位手机号<br/>首位字母密码                                  |
+| /upload     |   POST   | --                                                           | 图片上传                                                     |
+| /deleteUp   |   GET    | file:String                                                  | 上传图片删除                                                 |
+| /publish    |   POST   | \*user_id<br>\*cate<br>\*school<br>\*title<br>\*desc<br>\*price<br>old_price<br>pic | 用户id<br>商品分类<br>所在学校<br>商品标题<br>商品描述<br>商品价格<br>商品原价<br>图片链接 |
+| /search     |   GET    | \*school<br>\*keyword<br>\*page<br>\*size                    | 学校名称<br>关键词<br>第几页<br>有几个                       |
